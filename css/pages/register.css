@@ -1,0 +1,44 @@
+body{
+height: 100vh;
+display: grid;
+grid-template-rows: auto 1fr auto;
+align-items: center;
+text-shadow: 0 .05rem .1rem rgba(0, 0, 0, .5);
+box-shadow: inset 0 0 5rem rgba(0, 0, 0, .5);
+}
+
+haeder.flex {
+    color: var(--white);
+    padding-block: 0.6rem;
+    & .fa-solid {
+      color: var(--white);
+    }
+    & .logo {
+      font-size: 1rem;
+      & .fa-bag-shopping{
+        font-size: 1.7rem ;
+      }
+    
+    }
+   
+    & .sign-in:hover,
+    & .register:hover {
+      border: 1px solid rgb(152, 154, 189);
+      padding: 0.5rem 1.1rem;
+    }
+    & .cart:hover {
+      border: 1px solid rgb(152, 154, 189);
+      padding: 0.5rem 1.1rem 0.5rem 0.7rem;
+    }
+    & .logo:hover {
+      scale: 0.95;
+      color: var(--white);
+    }
+  }
+  main{
+    max-width: 500px;
+    text-align: left;
+  }
+  footer{
+    background-color:transparent ;
+  }
